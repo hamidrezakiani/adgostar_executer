@@ -1,0 +1,239 @@
+@media(max-width:600px){
+    #next,#prev{
+        display: none;
+    }
+}
+#product-name,#status,#start-time,#end-time,#more{
+font-weight: 200;
+}
+.NEW{
+    background-color: rgb(235, 238, 44);
+    padding: 1px 10px 2px 10px;
+    border-radius: 5px;
+}
+#more{
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+}
+#detail-box div{
+width: 100%;
+    display: block;
+    margin: 3px 0;
+}
+#detail-box{
+ padding: 5px;
+ font-size: 13px;
+ font-weight: 500;
+ width: 200px;
+ position: absolute;
+ display: none;
+ z-index: 1200;
+ background-color: rgb(255, 255, 255);
+ border-radius: 5px;
+ border: 1px solid rgb(180, 187, 253);
+}
+#next-month:hover{
+    cursor: pointer;
+}
+#prev-month:hover{
+    cursor: pointer;
+}
+
+#calender-table{
+    max-width: 500px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select:none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border-bottom: none;
+    position: relative;
+    height: 500px;
+    border-bottom: 2px solid #ddd;
+    /* overflow: scroll; */
+}
+#calender-lines td{
+    border: none;
+    border-right: 2px solid #ddd;
+    height: 498px;
+}
+#calender-lines{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+.taskbar{
+    border: none;
+    height: 30px;
+}
+
+.taskbar td{
+    border: none !important;
+    padding: 0 !important;
+    word-wrap: break-word !important;
+}
+
+.task-title{
+ word-wrap: break-word !important;
+ z-index: 1;
+ padding-top: 12px;
+ height: 100%;
+ width: 100%;
+ display: block;
+ font-weight: 700;
+}
+
+.tasks{
+    font-weight: 100;
+    background-color: green;
+    color: #fff;
+    height: 48px;
+    font-size: 15px;
+    text-align: center;
+    margin: 2px 0px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    float: left;
+    direction: ltr;
+}
+.task-times{
+    height: 11px;
+    margin-top: 1px;
+    position: relative;
+    z-index: -1;
+    line-height: 10px;
+    font-size: 10px;
+    color: #fff;
+}
+.tasks.NEW{
+    background-color: #ccc;
+    color: black;
+}
+.tasks.TIME_REJECTED .task-times{
+  background-color: red;
+}
+.tasks.TIME_SUGGEST .task-times{
+  background-color: blueviolet;
+}
+.tasks.TIME_SUGGEST,.tasks.TIME_REJECTED{
+    background-color: #ccc;
+    color: black;
+}
+.tasks.CANCELED{
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+}
+#calender-table tr th,#calender-table tr td{
+    height: 30px;
+    min-width: 120px;
+    text-align: center;
+    font-family: 'tahoma';
+    position: relative;
+}
+#calender-table tr td{
+    font-weight: 700;
+    font-size: 18px;
+}
+.div-month{
+    position: absolute;
+    top: -3px;
+     right: 2px;
+     font-family: 'tahoma';
+     font-style: italic;
+     font-weight: bold;
+     font-size: 15px;
+     color: rgb(8, 8, 8);
+     opacity: 0.2;
+     z-index: 1;
+     overflow: hidden;
+}
+.div-year{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+     font-family: 'tahoma';
+     font-style: italic;
+     font-weight: bold;
+     font-size: 13px;
+    color: rgb(8, 8, 8);
+    opacity: 0.2;
+    z-index: 1;
+    overflow: hidden;
+}
+.holiday{
+    color: red;
+}
+#next{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'tahoma';
+    border: none;
+    height: 92px;
+    display: inline;
+    position: fixed;
+    float: left;
+    left: 0px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 0.7s ease;
+    -moz-transition: opacity 0.7s ease;
+    -o-transition: opacity 0.7s ease;
+    transition: opacity 0.7s ease;
+}
+#next:hover{
+    opacity: 1;
+}
+#prev{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'tahoma';
+    border: none;
+    height: 92px;
+    display: inline;
+    position: fixed;
+    float: right;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 0.7s ease;
+    -moz-transition: opacity 0.7s ease;
+    -o-transition: opacity 0.7s ease;
+    transition: opacity 0.7s ease;
+}
+#prev:hover{
+    opacity: 1;
+
+}
+#calender-div{
+ overflow: hidden;
+ /* position: absolute; */
+ height: auto;
+ padding: 0 !important;
+ margin: 0 !important;
+ background-color: #fff;
+}
+
+#prev-month{
+float: right;
+direction: rtl;
+font-size: 'tahoma';
+font-weight: 600;
+margin: 10px 5px;
+}
+
+#next-month{
+    float: left;
+    direction: ltr;
+    font-size: 'tahoma';
+    font-weight: 600;
+    margin: 10px 5px;
+}

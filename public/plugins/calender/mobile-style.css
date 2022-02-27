@@ -1,0 +1,7 @@
+#next,#prev{
+        display: none;
+    }
+
+    #calender-table tr td,#calender-table tr th{
+        min-width: 72px;
+    }
